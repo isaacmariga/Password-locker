@@ -1,3 +1,4 @@
+from cgi import test
 import unittest
 from password import Credentials
 
@@ -33,6 +34,14 @@ class TestCredentials(unittest.TestCase):
         self.new_credential.save_credential()
         self.assertEqual(len(Credentials.credential_list),1)
 
+    def test_save_multiple_credentials(self):
+        """Test to check if we can save multiple credentials to our array
+        """
+        self.new_credential.save_credential()
+        test_credential =  Credentials("twitter","password")
+
+        test_credential.save_credential()
+        self.assertEqual(len(Credentials.credential_list),2)
 
 if __name__ == '__main__':
     unittest.main()
