@@ -1,6 +1,7 @@
-from cgi import test
 import unittest
 from password import Credentials
+import pyperclip
+
 
 class TestCredentials(unittest.TestCase):
     """test that defines test cases for the credential class behaviors

@@ -1,4 +1,7 @@
+import pyperclip
+
 class Credentials:
+
     """
     Class that generates instances of credentials
     
