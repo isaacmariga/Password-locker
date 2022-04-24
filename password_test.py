@@ -55,9 +55,9 @@ class TestCredentials(unittest.TestCase):
             self.new_credential.delete_credential()
             self.assertEqual(len(Credentials.credential_list),1)
 
-    def test_find_credential_by_account(self):
+    def test_find_credential_by_credential(self):
         '''
-        test to check if we can find a credential by account and display information
+        test to check if we can find a credential by credential and display information
         '''
 
         self.new_credential.save_credential()
@@ -91,6 +91,17 @@ class TestCredentials(unittest.TestCase):
 
         self.assertEqual(Credentials.display_credentials(),Credentials.credential_list)
 
+
+
+    def test_copy_password(self):
+        '''
+        Test to confirm that we are copying the password from a found credential
+        '''
+
+        self.new_credential.save_credential()
+        Credentials.copy_password("twitter")
+
+        self.assertEqual(self.new_credential.password,pyperclip.paste())
 
 if __name__ == '__main__':
     unittest.main()
