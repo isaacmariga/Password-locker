@@ -3,7 +3,7 @@ class Credentials:
     Class that generates instances of credentials
     
     """
-    credentials = []
+    credential_list = []
 
     def __init__(self, account, password):
         """
