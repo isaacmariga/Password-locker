@@ -15,4 +15,10 @@ def save_credentials(credential):
     '''
     Function to save credential
     '''
-    credential.save_credential()
+    Credentials.save_credential()
+
+def del_credential(credential):
+    '''
+    Function to delete a credential
+    '''
+    Credentials.delete_credential()
