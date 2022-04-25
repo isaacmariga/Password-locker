@@ -7,7 +7,7 @@
 
 ## Secreenshot
 
-(https://user-images.githubusercontent.com/93251524/165018671-f75fe0da-e9cb-45f7-9ccf-40214d3daba3.png)
+<img src = https://user-images.githubusercontent.com/93251524/165018671-f75fe0da-e9cb-45f7-9ccf-40214d3daba3.png)>
 
 
 ## User Stories 
