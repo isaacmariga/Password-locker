@@ -7,7 +7,7 @@
 
 ## Secreenshot
 
-<img src = "">
+</relative/path/to/img.jpg?raw=true "Optional Title">
 
 ## User Stories 
 {1. As a user, I want to create a password locker account with my details, a login username and password.
@@ -27,7 +27,6 @@
 * pip
 
 ## Live link
-* Follow the link https://isaacmariga.github.io/Mariga-s-Pizza-website/
 ## Known Bugs
 {main.js is not linked to index.html }
 ## Technologies Used
