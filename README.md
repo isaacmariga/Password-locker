@@ -7,7 +7,8 @@
 
 ## Secreenshot
 
-</relative/path/to/img.jpg?raw=true "Optional Title">
+(https://user-images.githubusercontent.com/93251524/165018671-f75fe0da-e9cb-45f7-9ccf-40214d3daba3.png)
+
 
 ## User Stories 
 {1. As a user, I want to create a password locker account with my details, a login username and password.
