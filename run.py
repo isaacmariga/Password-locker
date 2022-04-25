@@ -2,6 +2,7 @@
 
 from password import Credentials
 from password import User
+import pyfiglet
 
 def create_user(owner, key):
     '''
@@ -66,41 +67,51 @@ def copy_password():
     return Credentials.display_credentials()
 
 
+
 def main():
-    print("Hello Welcome to your Password-locker. What would you like to do?")
+
+    print("     ____                                     _   _               _             ")       
+    print("    |  _ \ __ _ ___ ___ __      _____  _ __ __| | | |    ___   ___| | _____ _ __ ")
+    print("    | |_) / _` / __/ __ \ \ /\ / / _ \| '__/ _` | | |   / _ \ / __| |/ / _ \ '__|")
+    print("    |  __/ (_| \__ \__ \ \ V  V / (_) | | | (_| | | |__| (_) | (__|   <  __/ |   ")
+    print("    |_|   \__,_|___/___/  \_/\_/ \___/|_|  \__,_| |_____\___/ \___|_|\_\___|_|   ")
+                                                                           
+    
+    print("\n""Hello Welcome to your Password-locker. What would you like to do?")
     
     print("\n 1. Create an account \n 2 Exit")
     option = input()
 
 
     if option == "1":
-            print("what is your name?")
+            print("\n" "what is your name?")
+            
             owner = input()
             if not owner:
-                print("You must type in something")
+                print("\n" "You must type in something")
             else:
-                print("Enter password")
+                print("\n""Enter password")
                 key = input()
                 if not owner:
-                        print("You must type in something")
+                        print("\n""You must type in something")
                 else:
                         save_user(create_user(owner, key))
                         print("-"*10)
-                        print(f"{owner} please enter your password again to enter")
+                        print("\n"f"{owner} please enter your password again to enter")
                         new_key = input()
                         if new_key == key:
-                                print("/n You have successfully logged in")
+                                print("\n You have successfully logged in")
 
 
                         while True:
-                            print("Use these short codes : cc - create a new credential, dc - display credentials, fc -find a credential, ex -exit the password-locker")
+                            print("\n""Use these short codes : \n cc - create a new credential, \n dc - display credentials, \n fc -find a credential, \n ex -exit the password-locker")
                             short_code = input().lower()
                             if short_code == 'cc':
-                                print("New Credential")
+                                print("\n""New Credential")
                                 print("-"*10)
-                                print("Account ....")
+                                print("\n""Account ....")
                                 account = input()
-                                print("Password...")
+                                print("\n""Password...")
                                 passsword = input()
 
                                 # create and save new credential.
@@ -132,9 +143,9 @@ def main():
                                     print(f"Your {search_credential.account} Password is: {search_credential.password}")
                                     print('-' * 20)
                                 else:
-                                    print("That credential does not exist")
+                                    print("\n""That credential does not exist")
                             elif short_code == "ex":
-                                print("Bye .......")
+                                print("\n""Bye .......")
                                 break
                             else:
                                 print("I really didn't get that. Please use the short codes")
